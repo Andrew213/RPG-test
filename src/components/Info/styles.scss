@@ -1,0 +1,41 @@
+@import "../../styles/vars.scss";
+.info {
+  margin-bottom: 50px;
+  width: 100%;
+  @include wrapper-mixin();
+  background-color: #fff;
+  &__input {
+    max-width: 300px;
+  }
+  &__nameWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    align-self: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-left: 20px;
+    }
+
+    & span {
+      margin-left: 10px;
+    }
+  }
+
+  &__btn {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+$bg: #ffdab9;
+$text: #555555;
+$green: #77de51;
+$purpure: #800080;
+$border-radius: 4px;
+
+@mixin gradient-mixin() {
+  background: linear-gradient(45deg, #ffa500, #ff69b4, #800080);
+}
+
+@mixin shadow-mixin() {
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.3),
+    0 5px 15px rgba(128, 0, 128, 0.4);
+}
+
+@mixin wrapper-mixin() {
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.3),
+    0 5px 15px rgba(128, 0, 128, 0.4);
+  border-radius: $border-radius;
+  padding: 20px;
+}
